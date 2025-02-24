@@ -103,7 +103,7 @@ void deleteMid(int value) {
     } else if (temp == tail) { 
         tail = tail->prev;
         tail->next = NULL;
-    } else { // If the node is in the middle
+    } else { 
         temp->prev->next = temp->next;
         temp->next->prev = temp->prev;
     }
