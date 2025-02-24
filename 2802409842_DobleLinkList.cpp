@@ -69,7 +69,7 @@ void deleteBack() {
     }
 
     struct tnode *temp = tail;
-    if (head == tail) { // Only one element in the list
+    if (head == tail) { 
         head = tail = NULL;
     } else {
         tail = tail->prev;
@@ -95,12 +95,12 @@ void deleteMid(int value) {
         return;
     }
 
-    if (temp == head) { // If the node to delete is the head
+    if (temp == head) { 
         head = head->next;
         if (head != NULL) {
             head->prev = NULL;
         }
-    } else if (temp == tail) { // If the node to delete is the tail
+    } else if (temp == tail) { 
         tail = tail->prev;
         tail->next = NULL;
     } else { // If the node is in the middle
