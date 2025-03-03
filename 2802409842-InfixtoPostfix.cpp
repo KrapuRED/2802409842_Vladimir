@@ -66,7 +66,8 @@ void infixToPostfix(char *infix, char *postfix)
     int i = 0, j = 0;
     char token;
     
-    while ((token = infix[i++]) != '\0') {
+    while ((token = infix[i++]) != '\0') 
+    {
         if ((token >= 'a' && token <= 'z') || (token >= 'A' && token <= 'Z') || (token >= '0' && token <= '9')) 
 		{
             postfix[j++] = token;
